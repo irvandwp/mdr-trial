@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="add-user">
+    <button color="primary" mat-flat-button (click)="navigateToAddUser()">Add User</button>
+  </div>
+  <app-filter-bar
+    [usernameFilter]="usernameFilter"
+    [firstNameFilter]="firstNameFilter"
+    [sortField]="sortField"
+    (filterChange)="onFilterChange($event)" />
+  <app-user-table [employees]="paginatedEmployees" />
+  <app-pagination
+    [totalEmployees]="totalEmployees"
+    [pageSize]="pageSize"
+    [currentPage]="currentPage"
+    (pageChange)="onPageChange($event)" />
+</div>

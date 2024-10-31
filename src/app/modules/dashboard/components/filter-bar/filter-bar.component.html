@@ -1,0 +1,19 @@
+<div class="filter-bar">
+  <mat-form-field class="full-width">
+    <mat-label>Username</mat-label>
+    <input matInput placeholder="Username" [(ngModel)]="usernameFilter" (input)="onFilterChange()">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="First Name" [(ngModel)]="firstNameFilter" (input)="onFilterChange()">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Sort By</mat-label>
+    <mat-select [(ngModel)]="sortField" (selectionChange)="onFilterChange()">
+      <mat-option value="username">Username</mat-option>
+      <mat-option value="firstName">First Name</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

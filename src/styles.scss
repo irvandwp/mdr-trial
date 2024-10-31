@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  padding: 16px;
+  border-radius: 4px;
+  margin: 10px 0;
+  color: white;
+  transition: opacity 0.5s ease;
+}
+
+.toast-success {
+  background-color: green;
+}
+
+.toast-warning {
+  background-color: yellow;
+  color: black;
+}
+
+.toast-error {
+  background-color: red;
+}
